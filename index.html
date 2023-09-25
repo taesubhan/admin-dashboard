@@ -6,72 +6,250 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
     <title>Dashboard</title>
+    <link rel="icon" href="icons/view-dashboard.svg">
 </head>
 <body>
     <div class="webpage">
         <div class="menu">
-            <div class="dashboard">
+            <div class="dashboard-title">
+                <img src="icons/view-dashboard.svg" alt="Dashboard icon" class="dashboard-icon filter-white">
                 <h1>Dashboard</h1>
             </div>
-            <div class="menu-options-1">
-                <ul class="menu-options">
-                    <li class="menu-option">Home</li>
-                    <li class="menu-option">Profile</li>
-                    <li class="menu-option">Messages</li>
-                    <li class="menu-option">History</li>
-                    <li class="menu-option">Tasks</li>
-                    <li class="menu-option">Communities</li>
-                </ul>
-            </div>
-            <div class="menu-options-2">
-                <ul class="menu-options">
-                    <li class="menu-option">Settings</li>
-                    <li class="menu-option">Support</li>
-                    <li class="menu-option">Privacy</li>
-                </ul>
-            </div>
+            <ul class="menu-options-list-1">
+                <li class="menu-option">
+                    <a href="" class="menu-icon"><img src="icons/home-outline.svg" alt="Home icon" class="menu-icon filter-white"></a>
+                    <div><a href="" class="menu-title">Home</a></div>
+                </li>
+                <li class="menu-option">
+                    <a href="" class="menu-icon"><img src="icons/card-account-details-outline.svg" alt="Profile icon" class="menu-icon filter-white"></a>
+                    <div><a href="" class="menu-title">Profile</a></div>
+                </li>
+                <li class="menu-option">
+                    <a href="" class="menu-icon"><img src="icons/message.svg" alt="Messages icon" class="menu-icon filter-white"></a>
+                    <div class="click-effect"><a href="" class="menu-title">Messages</a></div>
+                </li>
+                <li class="menu-option">
+                    <a href="" class="menu-icon"><img src="icons/history.svg" alt="History icon" class="menu-icon filter-white"></a>
+                    <div class="click-effect"><a href="" class="menu-title">History</a></div>
+                </li>
+                <li class="menu-option">
+                    <a href="" class="menu-icon"><img src="icons/note-multiple.svg" alt="Tasks icon" class="menu-icon filter-white"></a>
+                    <div class="click-effect"><a href="" class="menu-title">Tasks</a></div>
+                </li>
+                <li class="menu-option">
+                    <a href="" class="menu-icon"><img src="icons/account-group-outline.svg" alt="Communities icon" class="menu-icon filter-white"></a>
+                    <div class="click-effect"><a href="" class="menu-title">Communities</a></div>
+                </li>
+            </ul>
+            <ul class="menu-options-list-2">
+                <li class="menu-option">
+                    <a href="" class="menu-icon"><img src="icons/cog.svg" alt="Settings icon" class="menu-icon filter-white"></a>
+                    <div><a href="" class="menu-title">Settings</a></div>
+                </li>
+                <li class="menu-option">
+                    <a href="" class="menu-icon"><img src="icons/help-box.svg" alt="Support icon" class="menu-icon filter-white"></a>
+                    <div><a href="" class="menu-title">Support</a></div>
+                </li>
+                <li class="menu-option">
+                    <a href="" class="menu-icon"><img src="icons/shield-check-outline.svg" alt="Privacy icon" class="menu-icon filter-white"></a>
+                    <div><a href="" class="menu-title">Privacy</a></div>
+                </li>
+            </ul>
         </div>
-        <div class="header">
-            <div class="first-row">
-                <ul class="first-row">
-                    <li class="header-first-row">
-                        <input type="text"></li>
-                    <li class="header-first-row">
-                        <p>bell</p>
-                    </li>
-                    <li class="header-first-row">
-                        <p>profile pic</p>
-                    </li>
-                    <li class="header-first-row">
-                        <p>Tae Han</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="second-row">
-                <div class="second-row">
-                    <p>placeholder image</p>
-                    <p>Hi there,</p>
-                    <p>Tae Han (@taehan)</p>
+        <div class="header web-margin">
+            <div class="first-row-header">
+                <div class="search center-position">
+                    <img src="icons/magnify.svg" alt="Search icon" class="search-icon">
+                    <input type="search" id="search">
                 </div>
-                <ul>
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </ul>
+                <div class="bell-profile-name">
+                    <div class="bell-icon-container center-position">
+                        <img src="icons/bell-ring-outline.svg" alt="Bell icon" class="bell-icon click-effect">
+                    </div>
+                    <div class="profile-pic-container first-row-icon">
+                        <img src="icons/capybara-bird.jpeg" alt="Profile picture" class="profile-pic click-effect">
+                    </div>
+                    <div class="profile-name click-effect">Tae Han</div>
+                </div>
+                
+            </div>
+            <div class="second-row-header">
+                <div class="welcome-area center-position">
+                    <div class="profile-pic-container second-row-icon">
+                        <img src="icons/capybara-bird.jpeg" alt="Profile picture" class="profile-pic">
+                    </div>
+                    <div class="welcome-message">
+                        <div class="welcome-text">
+                            Hi there,
+                        </div>
+                        <div class="welcome-user">
+                            Tae Han (@taehan)
+                        </div>
+                    </div>
+                </div>
+                <div class="project-buttons">
+                    <button class="project-button click-effect">New</button>
+                    <button class="project-button click-effect">Upload</button>
+                    <button class="project-button click-effect">Share</button>
+                </div>
             </div>
         </div>
-        <div class="body">
-            <div class="projects">
-                <div class="project">Super Cool Project</div>
-                <div class="project">Less Cool Project</div>
-                <div class="project">Impossible App</div>
-                <div class="project">Easy Peasy App</div>
-                <div class="project">Ad Blocker</div>
-                <div class="project">Money Maker</div>
+        <div class="body web-margin">
+            <div class="project-area">
+                <div class="project-header header-text">Projects</div>
+                <div class="project-cards">
+                    <div class="project-card card-design">
+                        <p class="project-title">Super Cool Project</p>
+                        <p class="project-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Morbi eget nisl vel ipsum feugiat tempor id quis velit.
+                            Duis mollis, metus at maximus bibendum, enim tortor
+                            consectetur tellus, at blandit erat diam in diam.
+                        </p>
+                        <div class="project-feature-icons">
+                            <img src="icons/star-plus-outline.svg" alt="Star icon" class="project-icon click-effect">
+                            <img src="icons/eye-plus-outline.svg" alt="Eye icon" class="project-icon click-effect">
+                            <img src="icons/source-fork.svg" alt="Fork icon" class="project-icon click-effect">
+                        </div>
+                    </div>
+                    <div class="project-card card-design">
+                        <p class="project-title">Less Cool Project</p>
+                        <p class="project-description">
+                            Sed a sagittis risus, aliquam congue nisl. Morbi lobortis
+                            neque id risus iaculis imperdiet. Quisque eu enim tristique,
+                            pellentesque magna eget, vulputate mauris.
+                        </p>
+                        <div class="project-feature-icons">
+                            <img src="icons/star-plus-outline.svg" alt="Star icon" class="project-icon click-effect">
+                            <img src="icons/eye-plus-outline.svg" alt="Eye icon" class="project-icon click-effect">
+                            <img src="icons/source-fork.svg" alt="Fork icon" class="project-icon click-effect">
+                        </div>
+                    </div>
+                    <div class="project-card card-design">
+                        <p class="project-title">Impossible App</p>
+                        <p class="project-description">
+                            Proin sit amet massa convallis, hendrerit est sed, tristique
+                            felis. Nam tellus nunc, condimentum eget hendrerit vel,
+                            faucibus in est.
+                        </p>
+                        <div class="project-feature-icons">
+                            <img src="icons/star-plus-outline.svg" alt="Star icon" class="project-icon click-effect">
+                            <img src="icons/eye-plus-outline.svg" alt="Eye icon" class="project-icon click-effect">
+                            <img src="icons/source-fork.svg" alt="Fork icon" class="project-icon click-effect">
+                        </div>
+                    </div>
+                    <div class="project-card card-design">
+                        <p class="project-title">Easy Peasy App</p>
+                        <p class="project-description">
+                            Mauris rutrum nulla lectus, sit amet semper tellus rutrum in.
+                            Nullam varius augue elit, quis eleifend nulla gravida non.
+                        </p>
+                        <div class="project-feature-icons">
+                            <img src="icons/star-plus-outline.svg" alt="Star icon" class="project-icon click-effect">
+                            <img src="icons/eye-plus-outline.svg" alt="Eye icon" class="project-icon click-effect">
+                            <img src="icons/source-fork.svg" alt="Fork icon" class="project-icon click-effect">
+                        </div>
+                    </div>
+                    <div class="project-card card-design">
+                        <p class="project-title">Ad Blocker</p>
+                        <p class="project-description">
+                            Praesent in luctus enim, nec accumsan ligula. Morbi in lectus
+                            erat. Duis eget ipsum molestie, egestas massa ac, malesuada
+                            ante.
+                        </p>
+                        <div class="project-feature-icons">
+                            <img src="icons/star-plus-outline.svg" alt="Star icon" class="project-icon click-effect">
+                            <img src="icons/eye-plus-outline.svg" alt="Eye icon" class="project-icon click-effect">
+                            <img src="icons/source-fork.svg" alt="Fork icon" class="project-icon click-effect">
+                        </div>
+                    </div>
+                    <div class="project-card card-design">
+                        <p class="project-title">Money Maker</p>
+                        <p class="project-description">
+                            Duis purus quam, euismod non nulla id, pellentesque vestibulum
+                            nisi. Quisque ut vehicula nunc, at dignissim dolor.
+                            Maecenas eu est nec arcu imperdiet vestibulum.
+                            Duis et lectus nec dolor rhoncus ultrices.
+                        </p>
+                        <div class="project-feature-icons">
+                            <img src="icons/star-plus-outline.svg" alt="Star icon" class="project-icon click-effect">
+                            <img src="icons/eye-plus-outline.svg" alt="Eye icon" class="project-icon click-effect">
+                            <img src="icons/source-fork.svg" alt="Fork icon" class="project-icon click-effect">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="news">
-                <div>Announcements</div>
-                <div>Trending</div>
+            <div class="news-cards">
+                <div class="announcement-area">
+                    <div class="announcement-header header-text">Announcement</div>
+                    <div class="announcement-card card-design">
+                        <div class="announcement-tile">
+                            <p class="announcement-title">Site Maintenance</p>
+                            <p class="announcement-text">
+                                Quisque suscipit, odio in pharetra consequat, nisi ipsum tempus
+                                tortor, vitae gravida sapien odio sed mauris.
+                            </p>
+                        </div>
+                        <div class="line-separator"></div>
+                        <div class="announcement-tile">
+                            <p class="announcement-title">Community Share Day</p>
+                            <p class="announcement-text">
+                                Ut eget dolor risus. Sed ultrices eros metus, in viverra massa
+                                posuere eu.
+                            </p>
+                        </div>
+                        <div class="line-separator"></div>
+                        <div class="announcement-tile">
+                            <p class="announcement-title">Updated Privacy Policy</p>
+                            <p class="announcement-text">
+                                Nunc ac finibus lorem, nec ultricies dolor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-area">
+                    <div class="trending-header header-text">Trending</div>
+                    <div class="trending-card card-design">
+                        <div class="trending-topics">
+                            <div class="trending-tile">
+                                <div class="profile-pic-container trending-icon">
+                                    <img src="icons/astronaut.jpg" alt="profile-pic" class="trending-icon">
+                                </div>
+                                <div class="trending-description">
+                                    <p>@awesomepancake</p>
+                                    <p>Great Project</p>
+                                </div>
+                            </div>
+                            <div class="trending-tile">
+                                <div class="profile-pic-container trending-icon">
+                                    <img src="icons/cat.jpg" alt="profile-pic" class="trending-icon">
+                                </div>
+                                <div class="trending-description">
+                                    <p>@giantturtle</p>
+                                    <p>Turtle Feeder</p>
+                                </div>
+                            </div>
+                            <div class="trending-tile">
+                                <div class="profile-pic-container trending-icon">
+                                    <img src="icons/shiba-inu.jpg" alt="profile-pic" class="trending-icon">
+                                </div>
+                                <div class="trending-description">
+                                    <p>@timjacobson</p>
+                                    <p>Tax Software</p>
+                                </div>
+                            </div>
+                            <div class="trending-tile">
+                                <div class="profile-pic-container trending-icon">
+                                    <img src="icons/capybara-bird.jpeg" alt="profile-pic" class="profile-pic">
+                                </div>
+                                <div class="trending-description">
+                                    <p>@taehan</p>
+                                    <p>Super Cool Project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

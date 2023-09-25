@@ -1,0 +1,372 @@
+/*********************/
+/**** All webpage ****/
+/*********************/
+
+:root {
+    --theme-color: #0ea5e9;
+    --theme-background-color: #e2e8f0;
+    font-family: Roboto, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    margin: 0px;
+}
+
+.webpage {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.click-effect:active {
+    transform: scale(0.98);
+}
+
+button.click-effect:active {
+    box-shadow: 0px 4px 2px -2px gray;
+    background-color: #0284c7;
+}
+
+/**************/
+/**** Menu ****/
+/**************/
+
+.menu {
+    grid-row: 1 / 3;
+    border: 1px solid black;
+    padding-left: 30px;
+
+    background-color: var(--theme-color);
+    color: white;
+}
+
+.dashboard-title {
+    font-size: 15px;
+    font-weight: bold;
+
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+} 
+
+.menu-options-list-1,
+.menu-options-list-2 {
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.menu-options-list-1 {
+    margin-bottom: 60px;
+}
+
+.menu-option {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+}
+
+.menu-title {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hover effect */
+
+.menu-title:hover {
+    text-decoration: underline;
+}
+
+a.menu-icon:hover + div > a {
+    text-decoration: underline;
+}
+
+/* images */
+
+.dashboard-icon {
+    width: 50px;
+}
+
+.menu-icon {
+    width: 30px;
+    justify-self: center;
+}
+
+.filter-white {
+    filter: invert(100%) sepia(100%) saturate(3%) hue-rotate(196deg) brightness(108%) contrast(100%);
+}
+
+/***********************/
+/**** Header + Body ****/
+/***********************/
+
+.web-margin {
+    margin: 0px;
+    padding: 20px 40px;
+}
+
+
+/****************/
+/**** Header ****/
+/****************/
+
+/* All header section */
+
+.center-position {
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic-container {
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.profile-pic {
+    width: auto;
+    height: 100%;
+    margin-left: -15px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* First row */
+
+.first-row-header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    gap: 2px;
+}
+
+.search-icon {
+    width: 25px;
+}
+
+#search {
+    width: 600px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgb(233, 233, 233);
+    border: none;
+    padding: 0px 10px;
+}
+
+.bell-profile-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.bell-icon {
+    width: 30px;
+}
+
+.first-row-icon {
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    justify-self: center;
+}
+
+/* Second row */
+
+.second-row-header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.second-row-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.welcome-area {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.welcome-text,
+.welcome-user {
+    font-weight: bold;
+}
+
+.welcome-text {
+    font-size: 18px;
+}
+
+.welcome-user {
+    font-size: 24px;
+}
+
+.project-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    align-items: center;
+    justify-content: end;
+}
+
+.project-button {
+    width: 120px;
+    height: 40px;
+    background-color: var(--theme-color);
+
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 30px;
+    
+    justify-self: end;
+}
+
+/**************/
+/**** Body ****/
+/**************/
+
+
+/* Project cards */
+
+.body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: var(--theme-background-color);
+    
+    box-shadow: inset 0px 6px 3px -3px gray;
+}
+
+.header-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.card-design {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.project-card {
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.project-feature-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+.project-icon {
+    width: 30px;
+    margin: 10px;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 18px;
+}
+
+/* Announcements */
+
+.news-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.trending-area {
+    align-self: end;
+}
+
+.announcement-title {
+    margin: 0px 0px 10px 0px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.announcement-text {
+    margin: 0px;
+
+    font-size: 14px;
+}
+
+.line-separator {
+    margin: 30px 0px;
+
+    border: 1px solid rgb(209, 209, 209);
+}
+
+/* Trending box */
+
+.trending-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.trending-tile {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+    align-items: center;
+}
+
+.trending-description {
+    margin: 10px 10px;
+}
+
+.trending-description > p {
+    margin: 5px 0px;
+}
+
+
